@@ -1,0 +1,47 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ProgramaEX08 {
+
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);
+
+		System.out.println("Informe o valor que deseja sacar: ");
+		double saque = leia.nextDouble();
+
+		double nota100, nota50, nota20, nota10, nota5, nota2, nota1;
+
+		nota100 = saque / 100;
+		double resto100 = saque % 100;
+
+		nota50 = resto100 / 50;
+		double resto50 = resto100 % 50;
+
+		nota20 = resto50 / 20;
+		double resto20 = resto50 % 20;
+
+		nota10 = resto20 / 10;
+		double resto10 = resto20 % 10;
+
+		nota5 = resto10 / 5;
+		double resto5 = nota10 % 5;
+
+		nota2 = resto5 / 2;
+		double resto2 = resto5 % 2;
+
+		nota1 = resto2 / 1;
+
+		System.out.println(nota100);
+		System.out.println(nota50);
+		System.out.println(nota20);
+		System.out.println(nota10);
+		System.out.println(nota5);
+		System.out.println(nota2);
+		System.out.println(nota1);
+
+		leia.close();
+	}
+
+}

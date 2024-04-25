@@ -1,0 +1,37 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ProgramaEX10 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Digite seu peso: ");
+		double peso = leia.nextDouble();
+		
+		System.out.println("Digite sua altura: ");
+		double altura = leia.nextDouble();
+		
+		double imc = (peso / altura);
+		imc = imc * imc;
+		
+		if (imc < 16) {
+			System.out.println("De acordo com a tabela IMC sua categoria é magreza grave; ");
+		}else if (imc < 16.9) {
+			System.out.println("De acordo com a tabela IMC sua categoria é magreza moderada; ");
+		}else if (imc < 18.5) {
+			System.out.println("De acordo com a tabela IMC sua categoria é magreza leve; ");
+		}else if (imc < 24.9) {
+			System.out.println("De acordo com a tabela IMC sua categoria é peso ideal; ");
+		}else if (imc < 29.9) {
+			System.out.println("De acordo com a tabela IMC sua categoria é sobrepeso; ");
+		}else if (imc < 34.9) {
+			System.out.println("De acordo com a tabela IMC sua categoria é obesidade grau 1; ");			
+		}else {
+			System.out.println("De acordo com a tabela IMC sua categoria é obesidade grave; ");
+		}
+	}
+
+}

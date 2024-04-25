@@ -1,0 +1,38 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ProgramaEX11 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Insira um número de 1 a 12 representando o mês do ano: ");
+		int num = leia.nextInt();
+		
+		switch (num) {
+		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}		case 1: {
+			System.out.println("Janeiro");
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + num);
+		}
+		
+	}
+
+}

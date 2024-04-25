@@ -1,0 +1,21 @@
+package exercicios;
+
+import java.util.Scanner;
+import java.math.*;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);
+
+		int num = leia.nextInt();
+
+		int res = 0;
+		for (int i = num; 0 < num; i--) {
+			int fat = num * (num - i);
+			res = res + fat;
+		}
+		System.out.println(res);
+	}
+}

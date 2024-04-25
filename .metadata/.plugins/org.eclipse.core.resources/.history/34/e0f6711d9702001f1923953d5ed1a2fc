@@ -1,0 +1,13 @@
+package exercicios;
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		
+		String palavra = "Minha palavra";
+		
+		
+
+	}
+
+}

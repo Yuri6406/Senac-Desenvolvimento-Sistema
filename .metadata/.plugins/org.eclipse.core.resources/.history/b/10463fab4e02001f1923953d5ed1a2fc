@@ -1,0 +1,21 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+
+		System.out.println("Digite o número que deseja verificar: ");
+
+		int num = leia.nextInt();
+
+		while (0 <= num) {
+			if (num % 2 != 0) {
+				System.out.println(num);
+			}
+		}
+		num--;
+	}
+}

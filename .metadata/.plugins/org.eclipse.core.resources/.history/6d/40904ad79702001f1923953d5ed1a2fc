@@ -1,0 +1,15 @@
+package exercicios;
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		
+		String palavra = "Minha palavra";
+		
+		for (int i = 0; i < palavra.length(); i++) {
+			System.out.println(palavra.charAt(i));
+		}
+
+	}
+
+}

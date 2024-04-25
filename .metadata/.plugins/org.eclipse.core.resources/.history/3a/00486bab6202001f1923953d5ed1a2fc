@@ -1,0 +1,20 @@
+package exercicios;
+
+import java.util.Scanner;
+import java.math.*;
+
+public class Ex06 {
+
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);
+		
+		int num = leia.nextInt();
+		
+		for (int i = 1; i <= num; i++) {
+			System.out.println(i + " " + Math.pow(i,2.0));
+		}
+		
+	}
+
+}
